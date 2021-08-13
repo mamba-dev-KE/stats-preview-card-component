@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	font-size: 10px;
+}
+
+/* 
+font-family: 'Lexend Deca', sans-serif;
+*/
+
+body {
+	color: #fff;
+	font-family: "Inter", sans-serif;
+}
+
+section {
+	padding: 10em 0;
+	background-color: hsl(233, 47%, 7%);
+}
+
+img {
+	width: 80%;
+	max-width: 100%;
+	display: block;
+}
+
+.container {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.card-info {
+    
+}
+
+.attribution a:hover,
+.attribution a:focus,
+.attribution a:visited,
+.attribution a:link {
+	color: #fff;
+	font-size: 1rem;
+}
+
+@media (min-width: 500px) {
+}
