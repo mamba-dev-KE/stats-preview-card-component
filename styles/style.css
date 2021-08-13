@@ -10,18 +10,10 @@
 	font-size: 10px;
 }
 
-/* 
-
-*/
-
 body {
 	color: #fff;
 	font-family: "Inter", sans-serif;
 	font-size: 1.5rem;
-}
-
-section {
-	padding: 10em 0;
 	background-color: hsl(233, 47%, 7%);
 }
 
@@ -30,15 +22,19 @@ img {
 	display: block;
 }
 
-.card {
-	border-radius: 100px;
-}
-.container {
-	width: 90%;
-	max-width: 1000px;
-	margin: 0 auto;
+section {
+	padding: 2em 0;
 }
 
+.container {
+	width: 90%;
+	max-width: 1440px;
+}
+
+.card,
+.container {
+	margin: 0 auto;
+}
 .card__info,
 .card__stats {
 	background-color: hsl(246, 38%, 16%);
@@ -58,6 +54,7 @@ img {
 	text-align: center;
 	margin: 0 auto;
 	line-height: 1.5;
+	max-width: 312px;
 }
 
 .card__para {
@@ -91,4 +88,77 @@ img {
 }
 
 @media (min-width: 500px) {
+	.card {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 70%;
+		padding-top: 5em;
+		max-width: 600px;
+	}
+
+	.card__title {
+		font-size: 2em;
+		width: 90%;
+	}
+
+	.card__title,
+	.card__para {
+		max-width: 400px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.row {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+
+	.card {
+		max-width: 100%;
+	}
+
+	.card__image {
+		width: 40%;
+	}
+	.card__info {
+		width: 60%;
+	}
+
+	.card__title,
+	.card__para {
+		text-align: left;
+		max-width: 100%;
+		margin: 0;
+	}
+
+	.card__title {
+		font-size: 3.5rem;
+		width: 75%;
+	}
+
+	.card__stats {
+		flex-direction: row;
+		margin-top: 4em;
+	}
+
+	.card__para {
+		width: 100%;
+	}
+
+	.card__stats__item + .card__stats__item {
+		margin-left: 4.5em;
+	}
+
+	.card__stat__para {
+		font-size: 1.2rem;
+	}
+
+	.card__text,
+	.card__stats {
+		text-align: left;
+		margin-left: 4.5em;
+	}
 }
